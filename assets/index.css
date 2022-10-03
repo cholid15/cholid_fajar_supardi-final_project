@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  font-family: Poppins;
+}
+
+.container {
+  padding: 0 100px 0 100px;
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    padding: 0 10px 0 10px;
+  }
+}
+
+/* Awal Navbar */
+.navbar {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #192a56;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.navbar ul li {
+  display: flex;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #3f4658;
+}
+@media only screen and (max-width: 320px) {
+  .navbar {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar ul {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* Akhir Navbar */
+
+/* Awal Jumbotron */
+.jumbotron {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  background-color: #192a56;
+}
+
+.about-me {
+  width: 50%;
+  color: white;
+}
+
+.about-me h1 {
+  font-size: 50px;
+}
+.pict-me {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.pict-me img {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 320px) {
+  .about-me h1 {
+    font-size: 30px;
+  }
+  .pict-me img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+  .jumbotron {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 5px 30px 5px;
+  }
+  .about-me {
+    width: 100%;
+  }
+  .pict-me {
+    width: 100%;
+  }
+}
+
+/* Akhir Jumbotron */
+
+/* Awal About me */
+.about-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about h2 {
+  margin: 20px 0 5px 0;
+  align-items: center;
+}
+
+.about-me-p-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-p-center p {
+  width: 50%;
+  margin: 5px 0 20px 0;
+}
+
+@media only screen and (max-width: 320px) {
+  .about {
+    width: 100%;
+  }
+  .about-me-p-center p {
+    width: 100%;
+  }
+}
+/* Akhir About me */
+
+/* Awal Skill Set */
+.skill h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skill {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bar {
+  background-color: #eee;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bar::before {
+  content: attr(data-skill);
+  background-color: #fe4e30;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.yellow::before {
+  background-color: #f7b731;
+}
+.bar.blue::before {
+  background-color: #03b4c5;
+}
+.bar.blue2::before {
+  background-color: #f7b731;
+}
+.bar.learning::before {
+  width: calc(20% - 10px);
+}
+.bar.basic::before {
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before {
+  width: calc(60% - 10px);
+}
+.bar.advanced::before {
+  width: calc(80% - 10px);
+}
+.bar.expert::before {
+  width: calc(100% - 10px);
+}
+
+@keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-moz-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .skill {
+    width: 100%;
+  }
+}
+/* Ahir Skil Set */
+
+/* Awal Contact  */
+.contact-me form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact form button {
+  background-color: #192a56;
+  color: white;
+}
+
+.contact form button:hover {
+  background-color: #384975;
+}
+
+@media only screen and (max-width: 320px) {
+  .contact-me form {
+    width: 80%;
+  }
+}
+/* Akhir Contact */
+
+/* Awal Footer */
+footer {
+  margin-top: 30px;
+  background-color: #192a56;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+/* Akhir Footer */
+@media only screen and (max-width: 320px) {
+} ;
